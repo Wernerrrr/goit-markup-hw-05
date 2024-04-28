@@ -55,7 +55,7 @@
           <h1 class="hero-section__title">
             EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS
           </h1>
-          <button type="button" class="hero-section__booking booking-button">
+          <button type="button" data-modal-open class="hero-section__booking booking-button">
             Request our service
           </button>
         </div>
@@ -112,14 +112,28 @@
       <section class="what-we-do">
         <div class="container">
           <h2 class="what-we-do__title">What we do</h2>
-          <div class="what-we-do__img">
-            <img src="./images/box1.jpg" alt="Planning" width="370" />
-            <img src="./images/box2.jpg" alt="Punctuality" width="370" />
+          <div class="what-we-do__img-set">
+            <div class="what-we-do__img">
+            <div class="what-we-do__overlay">DESKTOP APPS</div>
+            <img
+              src="./images/box1.jpg" 
+              alt="Planning" 
+              width="370" />
+              </div>
+              <div class="what-we-do__img">
+            <div class="what-we-do__overlay">MOBILE APPS</div>
+            <img
+              src="./images/box2.jpg" 
+              alt="Punctuality" 
+              width="370" />
+              </div>
+              <div class="what-we-do__img">
+            <div class="what-we-do__overlay">DESIGN SOLUTIONS</div>
             <img
               src="./images/box3.jpg"
               alt="Attention to details"
               width="370"
-            />
+            /></div>
           </div>
         </div>
       </section>
@@ -363,5 +377,18 @@
         </div>
       </div>
     </footer>
+
+    <div data-modal class="is-hidden">
+      <div data-modal-content>
+      <button type="button" data-modal-close>X
+        <!-- <svg data-modal-close>
+          <use href="./images/icons.svg#icon-modal-close"/>
+        </svg> -->
+                  </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
+
   </body>
 </html>
