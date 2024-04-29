@@ -185,6 +185,20 @@ button {
   display: flex;
 }
 
+.header__navigation .active::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--blue);
+  top: 40px;
+  left: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: width;
+}
+
 /*Hero section styling */
 
 .hero-section .container {
